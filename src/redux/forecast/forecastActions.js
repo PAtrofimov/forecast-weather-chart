@@ -12,7 +12,7 @@ export const getForecast = (city) => {
       dispatch(getForecastRequest());
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=bad46dfee1ae1125ec4faf31e63449de`
+          `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=bad46dfee1ae1125ec4faf31e63449de`
         )
         .then((response) => {
           const data = response.data.list.map((it) => {
